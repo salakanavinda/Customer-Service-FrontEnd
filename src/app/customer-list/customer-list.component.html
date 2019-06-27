@@ -1,0 +1,8 @@
+<h2>Customer List</h2>
+<div>
+  <ul class="customers">
+    <li *ngFor="let customer of customers">
+      <span class="badge">{{customer.Id}}</span>{{customer.name}}
+    </li>
+  </ul>
+</div>
