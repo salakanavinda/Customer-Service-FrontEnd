@@ -1,8 +1,9 @@
 <h2>Customer List</h2>
 <div>
-  <ul class="customers">
-    <li *ngFor="let customer of customers">
-      <span class="badge">{{customer.Id}}</span>{{customer.name}}
-    </li>
-  </ul>
+ <ul class="customers">
+   <li *ngFor = "let customer of customers | async" (click) = "onSelect(customer)" [title]="customer.name">
+     <span class="badge">{{customer.id}} </span>{{customer.name}}
+   </li>
+ </ul>
+<customer-details [customer] = "selectedCustomer"></customer-details>
 </div>
