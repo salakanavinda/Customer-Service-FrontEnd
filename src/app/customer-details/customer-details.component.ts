@@ -9,7 +9,8 @@ import { Customer } from '../customer';
 })
 export class CustomerDetailsComponent implements OnInit {
 
-  customers:Observable<Customer>;
+  //customers:Observable<Customer>;
+  @Input() customer;
   constructor() { }
 
   ngOnInit() {
