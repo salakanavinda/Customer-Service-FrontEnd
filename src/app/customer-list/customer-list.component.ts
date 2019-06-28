@@ -21,4 +21,8 @@ export class CustomerListComponent implements OnInit {
   loadData(){
     this.customers=this.customerService.getCustomersList();
   }
+  
+  onSelect(customer : Customer):void {
+    this.selectedCustomer = customer;
+  }
 }
