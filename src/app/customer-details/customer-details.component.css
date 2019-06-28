@@ -1,0 +1,18 @@
+.details{
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    width: 15em;
+    background-color: #EEE;
+    border-radius: 4px;
+    margin: .5em;
+    padding: .3em 0;
+}
+.details text{
+    position: relative;
+    top: -3px;
+}
+div.details{
+    position: center;
+    top: 60px;
+    right: 10px;
+}
