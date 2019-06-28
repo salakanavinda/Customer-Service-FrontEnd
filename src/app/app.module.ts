@@ -7,6 +7,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { CustomerSearchComponent } from './customer-search/customer-search.component';
 import { CustomerCreateComponent } from './customer-create/customer-create.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
