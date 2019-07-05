@@ -1,10 +1,11 @@
 
 <h2>Create Customer</h2>
-<div [hidden]="submitted" style="width: 300px;">
-  <form (ngSubmit)="onSubmit()">
+<div [hidden]="submitted" style="width: 300px;"><!--hidden property of div is binding with submitted variable-->
+  <form (ngSubmit)="onSubmit()"><--Template-driven form and from control-->
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name">
+      <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name"><!--Inset input field and that validate 
+      using required property of a form group and using two way binding ([ngMode])-->
     </div>
  
     <div class="form-group">
@@ -18,5 +19,5 @@
  
 <div [hidden]="!submitted">
   <h3>You submitted successfully!</h3>
-  <button class="btn btn-success" (click)="newCustomer()">Add</button>
+  <button class="btn btn-success" (click)="newCustomer()">Add</button><!--This button when click new customer created,this is event binding from class method-->
 </div>
