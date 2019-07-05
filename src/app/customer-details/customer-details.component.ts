@@ -10,7 +10,7 @@ import { Customer } from '../customer';
 export class CustomerDetailsComponent implements OnInit {
 
   //customers:Observable<Customer>;
-  @Input() customer;
+  @Input() customer;//this customer input from customer list parent component by using @Input decorator
   constructor() { }
 
   ngOnInit() {
