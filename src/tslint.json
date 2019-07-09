@@ -8,7 +8,7 @@
             "camelCase"
         ],
         "component-selector": [
-            false,
+            false,//because adding route(route module)
             "element",
             "app",
             "kebab-case"
