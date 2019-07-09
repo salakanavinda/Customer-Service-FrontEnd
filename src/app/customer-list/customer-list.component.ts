@@ -10,19 +10,19 @@ import { CustomerService } from '../customer-service.service';
 })
 export class CustomerListComponent implements OnInit {
 
-  customers:Observable<Customer>;
-
+  customers:Observable<Customer>;//variable for Observable customer from service
+  selectedCustomer:Customer;//variable for selecting customer from UI
   constructor(private customerService : CustomerService) { }
 
   ngOnInit() {
-    this.loadData();
+    this.loadData();//load the all customers when initialize this component 
   }
 
-  loadData(){
+  loadData(){//method of get customers from backend
     this.customers=this.customerService.getCustomersList();
   }
   
-  onSelect(customer : Customer):void {
+  onSelect(customer : Customer):void {//method,this bind with html template and here assing selected customer for pass to child component
     this.selectedCustomer = customer;
   }
 }
